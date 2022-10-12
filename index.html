@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body class="theme-1">
+  <main>
+    <div class="top-panel">
+      <h1>calc</h1>
+      <p>THEME</p>
+      <div class="theme-change">
+        <div class="theme-id">
+          <p>1</p>
+          <p>2</p>
+          <p>3</p>
+        </div>
+        <div class="theme-slider">
+          <div class="chosen-theme chosen-theme-1">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="display">
+      <p class="previous-number"></p>
+      <p class="display-number current-number"></p>
+    </div>
+    <div class="keypad">
+      <div class="number key-group-1" id="key-0">0</div>
+      <div class="number key-group-1" id="key-1">1</div>
+      <div class="number key-group-1" id="key-2">2</div>
+      <div class="number key-group-1" id="key-3">3</div>
+      <div class="number key-group-1" id="key-4">4</div>
+      <div class="number key-group-1" id="key-5">5</div>
+      <div class="number key-group-1" id="key-6">6</div>
+      <div class="number key-group-1" id="key-7">7</div>
+      <div class="number key-group-1" id="key-8">8</div>
+      <div class="number key-group-1" id="key-9">9</div>
+      <div class="dot key-group-1" id="key-dot">.</div>
+      <div class="calculation key-group-1" id="key-plus">+</div>
+      <div class="calculation key-group-1" id="key-minus">-</div>
+      <div class="calculation key-group-1" id="key-multiply">×</div>
+      <div class="calculation key-group-1" id="key-divide">÷</div>
+      <div class="functional key-group-2" id="key-del">DEL</div>
+      <div class="functional key-group-2" id="key-reset">RESET</div>
+      <div class="functional key-group-3" id="key-result">=</div>
+    </div>
+  </main>
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="https://www.frontendmentor.io/profile/zwiro">zwiro</a>.
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
