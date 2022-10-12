@@ -15,12 +15,12 @@ Users should be able to:
 
 ### Screenshot
 
-![](images/screenshot.jpg)
+![](/images/screenshot.png)
 
 ### Links
 
 - Solution URL: [Solution](https://your-solution-url.com)
-- Live Site URL: [Live Site](https://your-live-site-url.com)
+- Live Site URL: [Live Site](https://zwiro.github.io/calculator-app-challenge/)
 
 ## My process
 

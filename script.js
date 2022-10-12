@@ -96,6 +96,9 @@ class Calculator {
             this.previousNumber.textContent = this.previousOperation
         } else
             this.previousNumber.textContent = `${this.displayedNumber(this.previousOperation)} ${this.calculation}`
+        if (currentNumber.textContent.length >= 15) {
+            currentNumber.style.fontSize = '1rem'
+        } else currentNumber.style.fontSize = '2rem'
     }
 }
 
@@ -103,6 +106,10 @@ const calculator = new Calculator(previousNumber, currentNumber)
 
 numberButton.forEach(number => {
     number.addEventListener('click', () => {
+        // if (currentNumber.textContent.length >= 15) {
+        //     currentNumber.style.fontSize = '1.35rem'
+        // } else currentNumber.style.fontSize = '2rem'
+        if (currentNumber.textContent.length >= 19) return
         calculator.appendNumber(number.textContent)
         calculator.updateDisplay()
     })
@@ -160,5 +167,7 @@ sliderPosition.addEventListener('click', () => {
         sliderPosition.classList.add('chosen-theme-1')
     }
 })
+
+
 
 
