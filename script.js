@@ -96,9 +96,14 @@ class Calculator {
             this.previousNumber.textContent = this.previousOperation
         } else
             this.previousNumber.textContent = `${this.displayedNumber(this.previousOperation)} ${this.calculation}`
-        if (currentNumber.textContent.length >= 15) {
-            currentNumber.style.fontSize = '1rem'
-        } else currentNumber.style.fontSize = '2rem'
+        if ((window.outerWidth > 600)) {
+            if (currentNumber.textContent.length >= 15) {
+                currentNumber.style.fontSize = '1rem'
+            } else currentNumber.style.fontSize = '2rem'
+        } else
+            if (currentNumber.textContent.length >= 15) {
+                currentNumber.style.fontSize = '0.65rem'
+            } else currentNumber.style.fontSize = '1rem'
     }
 }
 

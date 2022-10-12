@@ -154,6 +154,10 @@ h1 {
     margin-bottom: auto;
 }
 
+.display .display-number .current-number {
+    font-size: 0.1rem;
+}
+
 .keypad {
     background-color: var(--keypad-bg);
     display: grid;
